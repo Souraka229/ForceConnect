@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Commerce en Ligne</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>MonCommerce</h1>
+        </div>
+        <nav>
+            <a href="#">Accueil</a>
+            <a href="#">Produits</a>
+            <a href="#">Panier</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="products">
+            <div class="product-card">
+                <img src="product1.jpg" alt="Produit 1">
+                <h3>Produit 1</h3>
+                <p>Prix : 20€</p>
+                <button onclick="ajouterPanier('Produit 1', 20)">Ajouter au panier</button>
+            </div>
+            <div class="product-card">
+                <img src="product2.jpg" alt="Produit 2">
+                <h3>Produit 2</h3>
+                <p>Prix : 35€</p>
+                <button onclick="ajouterPanier('Produit 2', 35)">Ajouter au panier</button>
+            </div>
+        </section>
+        
+        <section id="panier">
+            <h2>Panier</h2>
+            <ul id="panier-list"></ul>
+            <p>Total : <span id="total-price">0</span>€</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MonCommerce</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
